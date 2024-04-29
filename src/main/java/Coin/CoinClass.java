@@ -2,17 +2,17 @@ package Coin;
 
 public class CoinClass {
     private String side ;
-    final String head = "Head" ;
-    final String tail = "Tail" ;
+    public static String HEADS = "Heads";
+    public static String TAILS = "Tails";
 
     public void flip(){
 
         boolean rand = Math.random() < 0.5;
         System.out.println(rand);
         if (rand){
-            this.side = head ;
+            this.side = HEADS ;
         }else {
-            this.side = tail ;
+            this.side = TAILS ;
         }
 
     }
